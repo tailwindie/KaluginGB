@@ -12,4 +12,16 @@
     return arr;
 }
 
-string[] arr1 = addArr();
+void writeArr(string[] startArr)
+{
+    Console.Write($"\n");
+    Console.WriteLine($"Ваш массив: ");
+    for (int i = 0; i < startArr.Length; i++)
+    {
+        Console.Write($"\"{startArr[i]}\"   ");
+    }
+}
+
+string[] startArr = addArr();
+
+writeArr(startArr);
